@@ -1,4 +1,4 @@
-const deleteItem = (data, dispatch, id) => {
+const deleteItem = (data, id) => {
 
     const newData = [...data];
 
@@ -14,7 +14,7 @@ const deleteItem = (data, dispatch, id) => {
 
     }
 
-    dispatch({ type: 'data', payload: newData });
+    return newData;
 
 }
 

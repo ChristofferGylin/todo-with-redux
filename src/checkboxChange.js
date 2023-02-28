@@ -1,4 +1,4 @@
-const checkboxChange = (id, data, dispatch) => {
+const checkboxChange = (data, id) => {
 
     const newData = [...data];
 
@@ -22,7 +22,7 @@ const checkboxChange = (id, data, dispatch) => {
 
     }
 
-    dispatch({ type: 'data', payload: newData });
+    return newData;
 
 }
 
